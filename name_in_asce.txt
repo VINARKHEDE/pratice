@@ -1,0 +1,40 @@
+//program to arrange the name  in ascending order
+using System;
+namespace RunProgram
+{
+    class Sorting
+    {
+               
+        public static void Main(string [] args)
+        {
+            string s; char t;
+            Console.WriteLine("Enter the name");
+            s = Console.ReadLine();
+            char[] arr = s.ToCharArray();
+            for(int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+
+            for(int j = 0; j < arr.Length - 1; j++)//for each pass 
+            {
+                for(int i = 0; i < arr.Length - 1; i++)//to iterate in this pass
+                {
+                    if (arr[i] > arr[i + 1])  // to arrange in descending 
+
+                    {                         //if(arr[i]<arr[i+1]
+                         t = arr[i + 1];      
+                        arr[i + 1] = arr[i];
+                        arr[i]= t;
+                    }
+                }
+            }
+            Console.WriteLine("name in ascensing order is ");
+            foreach(char p in arr)
+            {
+                Console.WriteLine(p);
+            }
+            Console.ReadKey();
+        }
+    }
+}
