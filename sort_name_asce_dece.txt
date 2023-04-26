@@ -1,0 +1,41 @@
+sort your name by ascending or descending order
+using System;
+
+namespace pratice1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s;
+            Console.WriteLine("Enter the name");
+            s = Console.ReadLine();
+            Console.WriteLine("Ascending or descending");
+            string decide = Console.ReadLine();
+            char[] seperate = s.ToCharArray();
+            //sort () to arrange an array in  ascending order  
+            Array.Sort(seperate);
+            if (decide == "Ascending")
+            {
+                foreach (char n in seperate)
+                {
+                    Console.WriteLine(n);
+                }
+            }
+            else
+            {
+                //reverse () to reverse the aaray
+                Array.Reverse(seperate);
+                foreach (char n in seperate)
+                {
+                    Console.WriteLine(n);
+                }
+            }
+            Console.ReadKey();
+        }
+
+
+
+        
+    }
+}
