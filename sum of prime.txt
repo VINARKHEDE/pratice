@@ -1,0 +1,42 @@
+using System;
+namespace PrimeNumber
+{
+ class Addition
+{
+  static void Main(string [] args)
+{ 
+  int n, n1,n2;
+ Console.WriteLine(" Enter the first  Number");
+ n1=Convert.TOInt32(Console.ReadLine());
+Console.WriteLine(" Enter the second Number");
+ n2=Convert.TOInt32(Console.ReadLine());
+
+for(int i=1;i<3;i++){
+if(n1/n1==1 && n2/n2==1)
+{
+  int r1=n1;
+  int r2=n2;
+}
+else 
+{
+  Console.WriteLine(" Enter the another number");
+}
+ for(int j=1;j<3;j++)
+ {
+   int sum=r1+r2;
+}
+}
+Console.ReadKey();
+}
+}
+}
+
+
+
+
+
+ 
+
+  
+
+  
